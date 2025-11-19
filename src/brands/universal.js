@@ -1,6 +1,6 @@
 export default {
   greeting:
-    "Welcome! I’m the HI Kenko Health AI — here to help you choose the right wellness tests based on your symptoms and goals. What are you currently experiencing?",
+    "Welcome! I’m the Kenko Health AI — here to help you choose the right wellness tests based on your symptoms and goals. What are you currently experiencing?",
 
   products: [
     // --- FERTILITY / REPRODUCTIVE (FERTILYSIS) ---
