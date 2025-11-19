@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { OpenAI } from "openai";
 import { motion, AnimatePresence } from "framer-motion";
 import brand from "./brands/universal";
+import { SYSTEM_PROMPT } from "./path-to-your-prompt-file";
 import "./App.css";
 
 // 🔍 Match symptoms to product keywords using fuzzy matching
