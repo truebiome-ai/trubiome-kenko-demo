@@ -116,7 +116,7 @@ Your style:
       const response = await openai.chat.completions.create({
         model: "gpt-4",
         messages: [
-          { role: "system", content: systemPrompt },
+          { role: "system", content: SYSTEM_PROMPT },
           ...newMessages,
         ],
         temperature: 0.7,
