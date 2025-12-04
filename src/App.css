@@ -147,3 +147,53 @@ body {
 .input-area button:hover {
   background: #d96f1a;
 }
+
+/* ----- PRODUCT CARDS ----- */
+
+.product-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #eee0d4;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #00263A;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.product-card button {
+  background: #F58220;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.product-card button:hover {
+  background: #d96f1a;
+}
