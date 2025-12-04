@@ -42,6 +42,7 @@ Forbidden:
 - Do NOT recommend non-Ombre products.
 `;
 
+
 // 🔍 Match symptoms to product keywords using fuzzy matching
 const isSimilar = (input, keyword) => {
   return (
@@ -88,7 +89,6 @@ const renderProductCard = (product) => {
     </div>
   );
 };
-
   const [messages, setMessages] = useState([
     { role: "assistant", content: brand.greeting },
   ]);
