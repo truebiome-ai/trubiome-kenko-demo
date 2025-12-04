@@ -157,11 +157,23 @@ function App() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ delay: i * 0.05, type: "spring", stiffness: 50 }}
             >
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: msg.content.replace(/\n/g, "<br/>"),
-                }}
-              />
+              <>
+  {/* If message contains product identifiers, show cards */}
+  {brand.products.some(p => msg.content.includes(p.name)) ? (
+    <div className="product-card-container">
+      {brand.products
+        .filter(p => msg.content.includes(p.name))
+        .map(renderProductCard)}
+    </div>
+  ) : (
+    <span
+      dangerouslySetInnerHTML={{
+        __html: msg.content.replace(/\n/g, "<br/>"),
+      }}
+    />
+  )}
+</>
+
             </motion.div>
           ))}
 
