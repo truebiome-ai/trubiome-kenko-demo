@@ -5,6 +5,9 @@ import { OpenAI } from "openai";
 import { motion, AnimatePresence } from "framer-motion";
 import brand from "./brands/universal";
 import "./App.css";
+import DisclaimerModal from "./brands/DisclaimerModal";
+
+const [showDisclaimer, setShowDisclaimer] = useState(true);
 
 const SYSTEM_PROMPT = `
 You are the Ombre Gut Intelligence Assistant — a warm, conversational, highly knowledgeable functional-medicine AI built to help users understand their symptoms and find the best Ombre products for their needs.
@@ -145,6 +148,11 @@ function App() {
 
   return (
     <div className="app">
+      <DisclaimerModal
+  show={showDisclaimer}
+  onClose={() => setShowDisclaimer(false)}
+/>
+
       <AnimatePresence>
         <motion.div
   className="chat-window"
