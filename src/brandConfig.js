@@ -1,33 +1,120 @@
 const brand = {
-  name: "TruBiome.AI",
-  description: "A friendly AI trained to recommend gut health supplements based on symptoms.",
-  greeting: "Welcome! I’m TruBiome.AI — your personalized wellness assistant. What symptoms are you currently struggling with or hoping to improve?",
+  name: "Ombre Gut Intelligence Assistant",
+  description: "A clinical, microbiome-focused AI trained to recommend Ombre products based on symptoms.",
+  
+  greeting:
+    "Welcome! I’m the Ombre Gut Intelligence Assistant — powered by TruBiome.AI. Tell me your symptoms, and I’ll recommend the best Ombre products to support your gut health!",
+
   products: [
     {
-      name: "L-Glutamine",
-      description: "Supports gut lining and repair.",
-      link: "https://example.com/l-glutamine",
-      keywords: ["bloating", "gut", "intestinal", "leaky gut"]
+      name: "Ombre Probiotic: Healthy Gut",
+      description:
+        "Supports microbial balance, reduces fermentation, and helps improve digestion.",
+      link: "https://www.ombrelab.com/products/healthy-gut",
+      keywords: [
+        "bloating",
+        "gas",
+        "constipation",
+        "digestion",
+        "brain fog",
+        "acne",
+        "skin",
+        "gut issues",
+        "ibs"
+      ],
     },
+
     {
-      name: "Digestive Enzymes",
-      description: "Helps break down food and reduce bloating.",
-      link: "https://example.com/enzymes",
-      keywords: ["bloating", "digestion", "gas"]
+      name: "Ombre Probiotic: Ultimate Immunity",
+      description:
+        "Contains immune-modulating strains that support resilience and overall immune health.",
+      link: "https://www.ombrelab.com/products/ultimate-immunity",
+      keywords: [
+        "immune",
+        "fatigue",
+        "low energy",
+        "inflammation",
+        "diarrhea",
+        "immune issues",
+        "immunity"
+      ],
     },
+
     {
-      name: "Probiotic Blend",
-      description: "Supports healthy gut flora and immune function.",
-      link: "https://example.com/probiotic",
-      keywords: ["constipation", "diarrhea", "microbiome"]
+      name: "Ombre Probiotic: Heart Health",
+      description:
+        "Includes strains shown to influence cholesterol balance and support cardiovascular wellness.",
+      link: "https://www.ombrelab.com/products/heart-health",
+      keywords: [
+        "heart",
+        "cholesterol",
+        "lipids",
+        "cardiovascular",
+        "blood pressure"
+      ],
     },
+
     {
-      name: "Zinc Picolinate",
-      description: "Reduces skin inflammation and supports immune function.",
-      link: "https://example.com/zinc",
-      keywords: ["acne", "skin", "inflammation"]
-    }
-  ]
+      name: "Ombre 3-in-1 Probiotic + Prebiotic",
+      description:
+        "A complete daily support blend combining probiotics, prebiotics, and microbiome-balancing nutrients.",
+      link: "https://www.ombrelab.com/products/3-in-1",
+      keywords: [
+        "overall gut health",
+        "preventative",
+        "daily support",
+        "microbiome",
+        "preventive"
+      ],
+    },
+
+    {
+      name: "Ombre Prebiotic Fiber with Greens",
+      description:
+        "Feeds beneficial bacteria, improves digestion, supports energy, and helps reduce bloating and constipation.",
+      link: "https://www.ombrelab.com/products/prebiotic",
+      keywords: [
+        "bloating",
+        "constipation",
+        "gas",
+        "fatigue",
+        "greens",
+        "fiber"
+      ],
+    },
+
+    {
+      name: "Ombre Digestive Enzymes",
+      description:
+        "Helps break down food efficiently, reducing post-meal bloating and upper GI discomfort.",
+      link: "https://www.ombrelab.com/products/digestive-enzymes",
+      keywords: [
+        "acid reflux",
+        "bloating after meals",
+        "slow digestion",
+        "digestion"
+      ],
+    },
+
+    {
+      name: "Ombre Gut Health Test",
+      description:
+        "Analyzes your microbiome to identify imbalances contributing to bloating, fatigue, brain fog, acne, IBS, and more.",
+      link: "https://www.ombrelab.com/products/gut-test",
+      keywords: [
+        "bloating",
+        "gas",
+        "fatigue",
+        "acne",
+        "skin issues",
+        "brain fog",
+        "ibs",
+        "diarrhea",
+        "constipation",
+        "gut test"
+      ],
+    },
+  ],
 };
 
 export default brand;
