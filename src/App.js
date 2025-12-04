@@ -135,37 +135,45 @@ function App() {
           transition={{ type: "spring", stiffness: 60, damping: 10 }}
         >
           {messages.map((msg, i) => {
-            const containsProduct =
-              typeof msg.content === "string" &&
-              brand.products.some((p) => msg.content.includes(p.name));
+  const matchedProducts =
+    typeof msg.content === "string"
+      ? brand.products.filter((p) => msg.content.includes(p.name))
+      : [];
 
-            return (
-              <motion.div
-                key={i}
-                className={`message ${msg.role} ${
-                  msg.type === "disclaimer" ? "disclaimer" : ""
-                }`}
-                initial={{ opacity: 0, y: 10, scale: 0.98 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ delay: i * 0.03, type: "spring" }}
-              >
-                {/* Product Cards */}
-                {containsProduct ? (
-                  <div className="product-card-container">
-                    {brand.products
-                      .filter((p) => msg.content.includes(p.name))
-                      .map(renderProductCard)}
-                  </div>
-                ) : (
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: msg.content.replace(/\n/g, "<br/>"),
-                    }}
-                  />
-                )}
-              </motion.div>
-            );
-          })}
+  return (
+    <motion.div
+      key={i}
+      className={`message ${msg.role}`}
+      initial={{ opacity: 0, y: 10, scale: 0.98 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ delay: i * 0.03, type: "spring" }}
+    >
+      {/* Always show the chatbot text */}
+      <span
+        dangerouslySetInnerHTML={{
+          __html: msg.content.replace(/\n/g, "<br/>"),
+        }}
+      />
+
+      {/* Product cards BELOW the text */}
+      {matchedProducts.length > 0 && (
+        <div className="product-card-container">
+          {matchedProducts.map((product) => (
+            <div className="product-card" key={product.name}>
+              <img src={product.image} alt={product.name} className="product-image" />
+              <h4>{product.name}</h4>
+              <p>{product.description}</p>
+              <a href={product.link} target="_blank" rel="noopener noreferrer">
+                <button className="product-button">View Product</button>
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
+    </motion.div>
+  );
+})}
+
 
           {loading && (
             <motion.div
