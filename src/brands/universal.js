@@ -9,7 +9,7 @@ export default {
         "A comprehensive at-home microbiome test that analyzes gut bacteria and gives personalized recommendations.",
       keywords: ["bloating", "gas", "constipation", "diarrhea", "gut health", "test"],
       link: "https://www.ombrelab.com/products/ombre-gut-health-test",
-      image: "/images/gut-test.jpg"
+     
     },
 
     {
@@ -18,7 +18,7 @@ export default {
         "Supports energy, metabolism, and overall gut–brain balance for smoother mornings.",
       keywords: ["fatigue", "low energy", "brain fog", "morning slump"],
       link: "https://www.ombrelab.com/products/rise",
-      image: "/images/rise.jpg"
+      
     },
 
     {
@@ -27,7 +27,7 @@ export default {
         "Feeds beneficial bacteria, improves stool regularity, and supports digestion.",
       keywords: ["constipation", "slow digestion", "fiber", "bloating"],
       link: "https://www.ombrelab.com/products/prebiotic-fiber-with-super-greens",
-      image: "/images/prebiotic-greens.jpg"
+     
     },
 
     {
@@ -36,7 +36,7 @@ export default {
         "A targeted blend supporting digestion, gas reduction, and microbiome balance.",
       keywords: ["bloating", "gas", "IBS", "gut imbalance"],
       link: "https://www.ombrelab.com/products/3-in-1-probiotic",
-      image: "/images/3-in-1.jpg"
+   
     },
 
     {
@@ -45,7 +45,7 @@ export default {
         "Supports gut lining, reduces inflammation, and improves digestion.",
       keywords: ["leaky gut", "inflammation", "bloating", "food sensitivity"],
       link: "https://www.ombrelab.com/products/healthy-gut",
-      image: "/images/healthy-gut.jpg"
+     
     },
 
     {
@@ -54,7 +54,7 @@ export default {
         "Supports energy, blood sugar regulation, and healthy metabolism.",
       keywords: ["weight", "blood sugar", "metabolism", "fatigue"],
       link: "https://www.ombrelab.com/products/metabolic-booster",
-      image: "/images/metabolic.jpg"
+     
     },
 
     {
@@ -63,7 +63,7 @@ export default {
         "Targets mitochondrial function to improve endurance and day-long energy.",
       keywords: ["fatigue", "tiredness", "low energy"],
       link: "https://www.ombrelab.com/products/endless-energy",
-      image: "/images/energy.jpg"
+      
     },
 
     {
@@ -72,7 +72,7 @@ export default {
         "Supports immune function and gut–immune balance.",
       keywords: ["immune", "sick", "inflammation"],
       link: "https://www.ombrelab.com/products/ultimate-immunity",
-      image: "/images/immunity.jpg"
+      
     },
 
     {
@@ -81,7 +81,7 @@ export default {
         "Supports gut–brain axis balance and emotional well-being.",
       keywords: ["anxiety", "mood", "stress", "tension"],
       link: "https://www.ombrelab.com/products/mood-enhancer",
-      image: "/images/mood.jpg"
+     
     },
 
     {
@@ -90,7 +90,7 @@ export default {
         "Supports cardiovascular function and healthy cholesterol levels.",
       keywords: ["cholesterol", "heart", "inflammation"],
       link: "https://www.ombrelab.com/products/heart-health",
-      image: "/images/heart.jpg"
+     
     }
   ]
 };
