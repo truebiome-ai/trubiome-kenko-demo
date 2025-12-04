@@ -42,19 +42,6 @@ Forbidden:
 - Do NOT recommend non-Ombre products.
 `;
 
-const renderProductCard = (product) => {
-  return (
-    <div className="product-card" key={product.name}>
-      <img src={product.image} alt={product.name} className="product-image" />
-      <h4>{product.name}</h4>
-      <p>{product.description}</p>
-      <a href={product.link} target="_blank" rel="noopener noreferrer">
-        <button className="product-button">View Product</button>
-      </a>
-    </div>
-  );
-};
-
 // 🔍 Match symptoms to product keywords using fuzzy matching
 const isSimilar = (input, keyword) => {
   return (
@@ -89,6 +76,18 @@ const openai = new OpenAI({
 function App() {
   // ⭐⭐⭐ The disclaimer state MUST be inside the component
   const [showDisclaimer, setShowDisclaimer] = useState(true);
+const renderProductCard = (product) => {
+  return (
+    <div className="product-card" key={product.name}>
+      <img src={product.image} alt={product.name} className="product-image" />
+      <h4>{product.name}</h4>
+      <p>{product.description}</p>
+      <a href={product.link} target="_blank" rel="noopener noreferrer">
+        <button className="product-button">View Product</button>
+      </a>
+    </div>
+  );
+};
 
   const [messages, setMessages] = useState([
     { role: "assistant", content: brand.greeting },
